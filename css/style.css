@@ -500,6 +500,9 @@ body {
 .call-back-input {
     margin-bottom: 50px;
 }
+#check {
+    background: transparent;
+}
 .text-or {
     font-family: 'Raleway-Medium';
     font-size: 18px;
