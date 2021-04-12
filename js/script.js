@@ -73,24 +73,29 @@ $('.slider').slick({
     slidesToScroll: 1,
     arrows:true,
     draggable: false,
+    infinity: true,
     asNavFor: '.dots-block'
 });
 $('.dots-block').slick({
     slidesToShow: 7,
+    slidesToScroll: 1,
     asNavFor: '.slider',
     focusOnSelect: true,
+    infinity: true,
     arrows: false,
     responsive: [
         {
           breakpoint: 991,
           settings: {
             slidesToShow: 6,
+            slidesToScroll: 1
           }
         },
         {
           breakpoint: 576,
           settings: {
             slidesToShow: 4,
+            slidesToScroll: 1
           }
         }
       ]
