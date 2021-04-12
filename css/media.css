@@ -212,6 +212,9 @@
     }
 }
 @media screen and (max-width: 576px) {
+    #catalogBtn {
+        margin: 0 auto;
+    }
     .slider {
         max-width: 300px;
         margin: 0 auto;

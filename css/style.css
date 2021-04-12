@@ -388,6 +388,10 @@ body {
     cursor: pointer;
     margin: 5px auto 0;
 }
+.book-img {
+    width: 17px;
+    height: 17px;
+}
 .dots-img:focus {
     outline: none;
 }
