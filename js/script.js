@@ -28,6 +28,20 @@ $('#callback').on("click", function(e){
     scrollTop: top
     }, 900);
 });
+$('#aboutUs').on("click", function(e){
+    e.preventDefault();
+        var top = $("#about-container").offset().top;
+    $('html,body').animate({
+    scrollTop: top
+    }, 900);
+});
+$('#catalogBtn').on("click", function(e){
+    e.preventDefault();
+        var top = $("#catalog-container").offset().top;
+    $('html,body').animate({
+    scrollTop: top
+    }, 900);
+});
 
 // Slider:
 $('.slider').slick({

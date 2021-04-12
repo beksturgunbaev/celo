@@ -392,7 +392,12 @@ body {
     outline: none;
 }
 .dots-img {
+    border-radius: 20px;
+    overflow: hidden;
     opacity: 1;
+}
+.dots-img img {
+    margin: 0 auto;
 }
 .dots-img.active_slide {
     opacity: .5;
@@ -502,6 +507,10 @@ body {
 }
 #check {
     background: transparent;
+}
+#catalogBtn {
+    max-width: 140px;
+    padding: 0 5px 0 24px;
 }
 .text-or {
     font-family: 'Raleway-Medium';
