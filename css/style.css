@@ -94,6 +94,74 @@ body {
 .burger-line:nth-child(2) {
     margin: 10px 0;
 }
+/* Modal */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 99999;
+    background-color: rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(1.2);
+    transition: .3s ease all;
+}
+.modal.active {
+    visibility: visible;
+    opacity: 1;
+    transform: scale(1);
+}
+.modal-content {
+    max-width: 420px;
+    width: 100%;
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+    padding: 48px 50px;
+}
+.modal-title {
+    font-family: 'Raleway-Medium';
+    font-size: 18px;
+    line-height: 24px;
+    color: #000000;
+    margin-bottom: 10px;
+}
+.modal-title span {
+    font-family: 'Raleway-Bold';
+}
+.modal-input {
+    font-family: 'Raleway-Light';
+    font-size: 16px;
+    line-height: 24px;
+    color: #000000;
+    opacity: 1;
+    width: 100%;
+    margin: 12px 0;
+    padding: 4px 0;
+    border: none;
+    border-bottom: 1.4px solid #F7C443;
+}
+.modal-input::placeholder {
+    opacity: 1;
+}
+.modal-input:focus {
+    outline: none;
+}
+.modal-input-last {
+    margin-bottom: 40px !important;
+}
+.modal-success {
+    text-align: center;
+    display: none;
+}
+.success-btn {
+    margin: 24px auto 0;
+}
 /* Mobile menu */
 .mobile-menu {
     position: fixed;

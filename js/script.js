@@ -6,6 +6,25 @@ $('.close-menu').click(function() {
     $('.mobile-menu').removeClass('active');
 });
 
+// Catalog button:
+$('.catalog-btn').click(function() {
+    $('.modal').addClass('active');
+});
+jQuery(function($){
+	$(document).mouseup(function (e){ 
+		var div = $(".modal-content"); 
+		if (!div.is(e.target) 
+		    && div.has(e.target).length === 0) { 
+            $('.modal').removeClass('active');
+		}
+	});
+});
+
+$('.modal-btn').click(function() {
+    $('.modal-form').css('display', 'none');
+    $('.modal-success').css('display', 'block');
+    return false;
+});
 // Scroll menu:
 $('#product').on("click", function(e){
     e.preventDefault();
