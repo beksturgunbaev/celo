@@ -233,6 +233,10 @@
     }
 }
 @media screen and (max-width: 480px) {
+    .modal-content {
+        padding: 40px 25px;
+        width: 95%;
+    }
     .footer-links {
         font-size: 11px;
         line-height: 18px;
@@ -277,5 +281,8 @@
     }
     .dots-block {
         max-width: 250px;
+    }
+    .modal-content {
+        padding: 30px 14px;
     }
 }
